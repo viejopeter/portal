@@ -1,0 +1,13 @@
+services:
+
+    react:
+       build: ./react
+       image: portal-frontend # Docker image
+       container_name: dev-react-portal
+       volumes:
+         - ./react:/app #mount current folder
+       ports:
+         - "3000:5173"
+       stdin_open: true  # interactive
+       tty: true         # terminal
+       command: sh
