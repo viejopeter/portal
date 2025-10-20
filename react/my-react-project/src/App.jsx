@@ -1,35 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import HelloWorld from './components/HelloWorld.jsx';
+import LearnReact from './components/LearnReact.jsx';
+import LearnJSX from './components/LearnJSX.jsx';
+import LearnProps from './components/LearnProps.jsx';
+import LearnEvent from './components/LearnEvent.jsx';
+import LearnLiftingStateUp from './components/LearnLiftingStateUp.jsx';
+import LearnUseState from './components/LearnUseState.jsx';
+import CounterApp from './components/CounterApp.jsx';
+import LearnUseEffect from './components/LearnUseEffect.jsx';
+import LearnUseMemo from './components/LearnUseMemo.jsx';
+import ChildA from './components/ChildA.jsx';
+import ChildC from './components/ChildC.jsx';
+import {createContext,useState} from 'react';
+import LearnUseRef from './components/LearnUseRef.jsx';
+import LearnCustomHooks from './components/LearnCustomHooks.jsx';
+import LearnConditionalRendering from './components/LearnConditionalRendering.jsx';
+import Exercise from './components/Exercise.jsx';
+import LearnMap from './components/LearnMap.jsx';
+
+
+const StockContext = createContext();
+const UserContext = createContext();
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [userData, setUserData] = useState({name:"Pedro",age:35})
+
+  let stock = "Microsoft";
+  let price = 300;
+
+  const getStock = (data) => {
+    console.log(data)
+  }
+
+  
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    {/* <h1>App Component</h1> */}
+    {/* {<HelloWorld />} */}
+    {/* {<LearnReact />} */}
+    {/* <LearnJSX /> */}
+    {/* <LearnProps stock="Apple" price={price} /> */}
+    {/* <LearnEvent /> */}
+    {/* <LearnLiftingStateUp getStock={getStock} /> */}
+    {/* <LearnUseState /> */}
+    {/* <CounterApp /> */}
+    {/* <LearnUseEffect /> */}
+    {/* <LearnUseMemo />  */}
+    {/* <StockContext.Provider value={{stock,price}}>
+       <UserContext.Provider value={{userData, setUserData}}>
+          <ChildC />
+       </UserContext.Provider>
+    </StockContext.Provider> */}
+    {/* <LearnUseRef /> */}
+    {/* <LearnCustomHooks /> */}
+    {/* <LearnConditionalRendering /> */}
+    {/* <Exercise /> */}
+    <LearnMap />
+
     </>
   )
 }
 
 export default App
+
+export {StockContext,UserContext}
+
+
