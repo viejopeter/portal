@@ -16,6 +16,7 @@ import LearnCustomHooks from './components/LearnCustomHooks.jsx';
 import LearnConditionalRendering from './components/LearnConditionalRendering.jsx';
 import Exercise from './components/Exercise.jsx';
 import LearnMap from './components/LearnMap.jsx';
+import TaskManager from './components/TaskManager.jsx';
 
 
 const StockContext = createContext();
@@ -57,7 +58,8 @@ function App() {
     {/* <LearnCustomHooks /> */}
     {/* <LearnConditionalRendering /> */}
     {/* <Exercise /> */}
-    <LearnMap />
+    {/* <LearnMap /> */}
+    <TaskManager />
 
     </>
   )
