@@ -18,6 +18,7 @@ import Exercise from './components/Exercise.jsx';
 import LearnMap from './components/LearnMap.jsx';
 import TaskManager from './components/TaskManager.jsx';
 import LearnInlineCSS from './components/LearnInlineCSS.jsx';
+import LearnLoadingImages from './components/LearnLoadingImages.jsx';
 
 
 const StockContext = createContext();
@@ -61,7 +62,8 @@ function App() {
     {/* <Exercise /> */}
     {/* <LearnMap /> */}
     {/* <TaskManager /> */}
-    <LearnInlineCSS />
+    {/* <LearnInlineCSS /> */}
+    <LearnLoadingImages  />
 
     </>
   )
