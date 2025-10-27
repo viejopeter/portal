@@ -20,6 +20,7 @@ import TaskManager from './components/TaskManager.jsx';
 import LearnInlineCSS from './components/LearnInlineCSS.jsx';
 import LearnLoadingImages from './components/LearnLoadingImages.jsx';
 import LearnForms from './components/LearnForms.jsx';
+import PracticeForms from './components/PracticeForms.jsx';
 
 
 const StockContext = createContext();
@@ -65,7 +66,8 @@ function App() {
     {/* <TaskManager /> */}
     {/* <LearnInlineCSS /> */}
     {/* <LearnLoadingImages  /> */}
-    <LearnForms />
+    {/* <LearnForms /> */}
+    <PracticeForms />
 
     </>
   )
