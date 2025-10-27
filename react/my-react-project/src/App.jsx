@@ -17,6 +17,7 @@ import LearnConditionalRendering from './components/LearnConditionalRendering.js
 import Exercise from './components/Exercise.jsx';
 import LearnMap from './components/LearnMap.jsx';
 import TaskManager from './components/TaskManager.jsx';
+import LearnInlineCSS from './components/LearnInlineCSS.jsx';
 
 
 const StockContext = createContext();
@@ -59,7 +60,8 @@ function App() {
     {/* <LearnConditionalRendering /> */}
     {/* <Exercise /> */}
     {/* <LearnMap /> */}
-    <TaskManager />
+    {/* <TaskManager /> */}
+    <LearnInlineCSS />
 
     </>
   )
