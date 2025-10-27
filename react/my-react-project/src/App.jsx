@@ -19,6 +19,7 @@ import LearnMap from './components/LearnMap.jsx';
 import TaskManager from './components/TaskManager.jsx';
 import LearnInlineCSS from './components/LearnInlineCSS.jsx';
 import LearnLoadingImages from './components/LearnLoadingImages.jsx';
+import LearnForms from './components/LearnForms.jsx';
 
 
 const StockContext = createContext();
@@ -63,7 +64,8 @@ function App() {
     {/* <LearnMap /> */}
     {/* <TaskManager /> */}
     {/* <LearnInlineCSS /> */}
-    <LearnLoadingImages  />
+    {/* <LearnLoadingImages  /> */}
+    <LearnForms />
 
     </>
   )
