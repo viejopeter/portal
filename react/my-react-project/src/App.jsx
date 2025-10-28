@@ -21,6 +21,7 @@ import LearnInlineCSS from './components/LearnInlineCSS.jsx';
 import LearnLoadingImages from './components/LearnLoadingImages.jsx';
 import LearnForms from './components/LearnForms.jsx';
 import PracticeForms from './components/PracticeForms.jsx';
+import StudentsList from './components/StudentList.jsx';
 
 
 const StockContext = createContext();
@@ -67,7 +68,8 @@ function App() {
     {/* <LearnInlineCSS /> */}
     {/* <LearnLoadingImages  /> */}
     {/* <LearnForms /> */}
-    <PracticeForms />
+    {/* <PracticeForms /> */}
+    <StudentsList />
 
     </>
   )
