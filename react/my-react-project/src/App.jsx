@@ -24,6 +24,7 @@ import PracticeForms from './components/PracticeForms.jsx';
 import StudentsList from './components/StudentList.jsx';
 import ToDoList from './components/ToDoList.jsx';
 import FavoriteMoviesList from './components/FavoriteMoviesList.jsx';
+import ListProducts from './components/ListProducts.jsx';
 
 
 const StockContext = createContext();
@@ -73,7 +74,8 @@ function App() {
     {/* <PracticeForms /> */}
     {/* <StudentsList /> */}
     {/* <ToDoList /> */}
-    <FavoriteMoviesList />
+    {/* <FavoriteMoviesList /> */}
+    <ListProducts />
 
     </>
   )
